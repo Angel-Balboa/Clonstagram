@@ -22,8 +22,8 @@ class CreatePublicacionsTable extends Migration
             $table->string('Titulo');
             $table->string('Descripcion');
             $table->string('Imagen');
-            $table->integer('Likes');
-            $table->string('comentarios');
+            $table->integer('Likes')->nullable();
+            $table->string('comentarios')->nullable();
             $table->timestamps();
         });
     }
